@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 d-flex gap-3">
+        <div class="col-md-3 d-flex gap-3 justify-content-end">
           <div class="position-relative">
             <NuxtImg
               class="shopping-cart-icon"
