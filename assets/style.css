@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'nipoto';
+    src:  url('../static/fonts/nipoto.eot?2ps8am');
+    src:  url('../static/fonts/nipoto.eot?2ps8am#iefix') format('embedded-opentype'),
+      url('../static/fonts/nipoto.ttf?2ps8am') format('truetype'),
+      url('../static/fonts/nipoto.woff?2ps8am') format('woff'),
+      url('../static/fonts/nipoto.svg?2ps8am#nipoto') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon"], [class*=" icon"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'nipoto' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .iconaddCircle:before {
+    content: "\e900";
+  }
+  .iconbag:before {
+    content: "\e901";
+  }
+  .iconminus:before {
+    content: "\e902";
+  }
+  .iconminusCirlce:before {
+    content: "\e903";
+  }
+  .iconadd:before {
+    content: "\e904";
+  }
