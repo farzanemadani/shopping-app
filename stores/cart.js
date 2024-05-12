@@ -31,7 +31,6 @@ export const useCartStore = defineStore('cart', {
       }
     },
     remove(){
-      
       this.products = this.products.map(item => {
         return {
           ...item,

@@ -1,6 +1,6 @@
 <template>
   <li>
-    <img class="rounded w-25 h-25" :src="product.img" :alt="product.name" />
+    <NuxtImg class="rounded w-25 h-25" :src="product.img" :alt="product.name" />
     <div class="pe-2">
       <span class="d-block">سبد خرید شما</span>
       <div class="d-flex">
@@ -41,7 +41,7 @@
 
   const decrementQuantity = () => {
     if (props.product.quantity > 1) {
-        cartStore.updateQuantity(props.product.id, props.product.quantity - 1);
+      cartStore.updateQuantity(props.product.id, props.product.quantity - 1);
     }
   };
 </script>

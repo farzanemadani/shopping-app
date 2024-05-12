@@ -34,6 +34,10 @@
     });
     cartStore.setProducts(products);
   }
+
+  useHead({
+    title: 'صفحه اصلی',
+  });
 </script>
 
 <style lang="scss" scoped></style>

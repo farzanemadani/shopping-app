@@ -3,7 +3,13 @@
     <div class="product">
       <NuxtImg class="w-100" :src="product.img" :alt="product.name"></NuxtImg>
       <div class="py-3 px-4">
-        <figcaption class="py-2">{{ product.name }}</figcaption>
+        <nuxtLink
+          class="py-2 d-block text-decoration-none"
+          :to="`/product/${product.id}`"
+        >
+          {{ product.name }}
+        </nuxtLink>
+
         <span class="fs-14 text-danger">{{ formattedPrice }}</span>
         <span class="fs-14 px-2 text-muted">تومان</span>
         <BaseButton
@@ -12,7 +18,7 @@
           className="add-btn text-white fs-14 w-100 py-3 mt-3"
           @mouseover="mouseoverEvent"
         >
-          افزودن به سبد خرید 
+          افزودن به سبد خرید
         </BaseButton>
         <BaseButton
           v-else
