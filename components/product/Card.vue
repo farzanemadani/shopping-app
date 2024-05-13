@@ -9,7 +9,6 @@
         >
           {{ product.name }}
         </nuxtLink>
-
         <span class="fs-14 text-danger">{{ formattedPrice }}</span>
         <span class="fs-14 px-2 text-muted">تومان</span>
         <BaseButton
@@ -24,7 +23,7 @@
           v-else
           @mouseleave="mouseleaveEvent"
           type="button"
-          className="btn hover-btn text-white fs-14 w-100 py-3 mt-3 d-flex justify-content-between align-items-center"
+          className="hover-btn text-white fs-14 w-100 py-3 mt-3 d-flex justify-content-between align-items-center"
         >
           <BaseIcon
             @click="addToCart(product, 1)"

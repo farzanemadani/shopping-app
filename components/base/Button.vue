@@ -29,7 +29,7 @@
   });
 
   const buttonClasses = computed(() => {
-    const classes = ["btn", props.className];
+    const classes = ['main-btn',props.className];
     if (props.disabled) {
       classes.push("cursor-not-allowed");
     }
