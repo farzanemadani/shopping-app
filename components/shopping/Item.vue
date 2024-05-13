@@ -40,9 +40,7 @@
   };
 
   const decrementQuantity = () => {
-    if (props.product.quantity > 1) {
-      cartStore.updateQuantity(props.product.id, props.product.quantity - 1);
-    }
+    cartStore.updateQuantity(props.product.id, props.product.quantity - 1);
   };
 </script>
 
